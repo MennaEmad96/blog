@@ -132,7 +132,7 @@
 								<?php include_once("includes/title&buttons.php"); ?>
 								<div class="x_content">
 									<br />
-									<form action="" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+									<form action="" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" onsubmit="return validateForm()">
 
 										<div class="item form-group">
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">Full Name <span class="required">*</span>

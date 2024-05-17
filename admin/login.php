@@ -76,7 +76,7 @@
                             if(isset($_SESSION["page"])){
                                 $page=$_SESSION["page"];
                             }else{
-                                $page="users.php";
+                                $page="posts.php";
                             }
                             header("Location: ".$page);
                             die();

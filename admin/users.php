@@ -88,6 +88,7 @@
                           <th>Role</th>
                           <?php if (isset($_SESSION['userRole']) && $_SESSION['userRole'] === "admin") { ?>
                             <th>Edit</th>
+                            <th>Delete</th>
                           <?php } ?>
                         </tr>
                       </thead>
