@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 16, 2024 at 02:18 AM
+-- Generation Time: May 17, 2024 at 01:32 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,7 +39,12 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `title`, `content`, `created_at`) VALUES
-(3, 'ttitle up', 'Content up', '2024-05-15 23:59:59');
+(5, 'title', 'Content', '2024-05-17 11:19:08'),
+(6, 'title 1', 'Content 1', '2024-05-17 11:11:39'),
+(7, 'title 2', 'Content 2', '2024-05-17 11:11:55'),
+(8, 'title 3', 'Content 3', '2024-05-17 11:12:06'),
+(9, 'title 4', 'Content 4', '2024-05-17 11:12:17'),
+(10, 'Ali update', 'Content Ali update', '2024-05-17 11:24:39');
 
 -- --------------------------------------------------------
 
@@ -62,15 +67,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `regDate`, `name`, `userName`, `email`, `password`, `role`) VALUES
-(1, '2024-05-15 23:20:59', 'sos', 'soha', 'soha@gmail.com', '$2y$10$/avv5Zw/blhRlo4uTbcYnOt15W0eSfrBnEmGO0rh3yoLU4Zli4AL6', 'admin'),
-(2, '2024-05-15 22:38:50', 'Menna', 'mm', 'mennaemad6kk196@gmail.com', '123456789', 'admin'),
-(3, '2024-05-15 22:53:38', 'Remy Ahmad', 'mennat1996', 'ahmad@gmail.com', '$2y$10$IthltN4wuMbq4XQ8nCgx3ea68/KCBRCA08CT.EvkCXMrkci75Mtlm', 'admin'),
-(4, '2024-05-15 22:54:05', 'try', 'm', 'ahmad@gmail.com', '$2y$10$9JAiYJ.YJKLoKBTMbRtVhuSBjynfZChzXQ2ndUdF5R9xNl/99Kzrq', 'user'),
-(5, '2024-05-15 22:55:30', 'Omar Emad', 'username', 'jacinto.cummings@example.com', '$2y$10$58cVRCV7QpjKsYDSmNmm8.HyIxn6XwDdDZ5RfFxxsWjgqOYgy/vE.', ''),
-(6, '2024-05-15 23:00:54', 'try', 'kkjj', 'kk@gmail.com', '$2y$10$zrmxLV9g/m41LmFfzD/9k.FjNmQb7ZTrTjyhNVn0VsRwkREfBrs62', ''),
-(7, '2024-05-15 23:03:52', 'full', 'u', 'u@gmail.com', '$2y$10$B4SnqWEYi8pam7dRhWKOku5.1zf1aWNK5iAhjMaVHqK32.jrSBtA6', ''),
-(8, '2024-05-15 23:09:35', 'Omar Emad', 'username', 'mennaemad6196@gmail.com', '$2y$10$hF13aFON7bAktd4Aasg.zuaqNNRv9CsgSsWrfpFKHSnPVu6yK/WDW', 'admin'),
-(9, '2024-05-15 23:49:04', 'Remy Ahmad', 'remyahmad2021', 'remy@gmail.com', '$2y$10$AP3suYOwtiBVQYj0rEMVfOPzJeHBh/4NWrdiaNWxEZteXMmo3DQIW', 'admin');
+(11, '2024-05-17 11:16:41', 'Menna Emad', 'mennat@1996', 'mennat@gmail.com', '$2y$10$Y0R.0OqVsUdw8g9lQA0wGen07O.9XQ0IarwWMGxkodisoVoYU379q', 'admin'),
+(12, '2024-05-17 11:18:06', 'Remy Ahmad', 'remyahmad2021', 'remy@gmail.com', '$2y$10$fM5s6RID1uy0WTbyNhpJo.boB2xWi6aj2QhBE2.mlLkgcT4Lx93WC', 'user');
 
 --
 -- Indexes for dumped tables
@@ -96,13 +94,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
