@@ -71,7 +71,7 @@
                         if($verify){
                         $_SESSION["logged"] = true;
                         $_SESSION["name"] = $name;
-                        $_SESSION['userRole'] = $result["role"];;
+                        $_SESSION['userRole'] = $result["role"];
                         //open into same page before logging
                             if(isset($_SESSION["page"])){
                                 $page=$_SESSION["page"];
